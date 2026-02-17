@@ -1,0 +1,43 @@
+{
+	"name": "encryptos",
+	"version": "1.0.0",
+	"description": "Encrypt to and decrypt from a file stream. Compatible with Node.js apps.",
+	"main": "encryptos.js",
+	"files": [
+		"encryptos.js"
+	],
+	"scripts": {
+		"start": "node encryptos.js",
+		"test": "npx jest"
+	},
+	"keywords": [
+		"encrypt",
+		"encryption",
+		"decrypt",
+		"decryption",
+		"file",
+		"stream",
+		"node",
+		"javascript",
+		"crypto",
+		"security",
+		"encrypto"
+	],
+	"author": "Faisal N",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^30.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/faisalnjs/encryptos.git"
+	},
+	"bugs": {
+		"url": "https://github.com/faisalnjs/encryptos/issues"
+	},
+	"publishConfig": {
+		"access": "public",
+		"tag": "latest"
+	},
+	"homepage": "https://faisaln.com/scripts/encryptos"
+}
