@@ -19,13 +19,21 @@ const ES = new encryptos({
     key: 'my-ultra-long-32-char-secret-key',
 });
 
+// Encrypt content
+var success = ES.directEncrypt('super secret content');
+console.log('Direct encryption successful:', success);
+
 // Encrypt content and save to file
-var success = ES.encrypt('super secret content');
-console.log('Encryption successful:', success);
+var success2 = ES.encrypt('super secret content');
+console.log('Encryption successful:', success2);
+
+// Decrypt content
+var decrypted = ES.directDecrypt(ES.directEncrypt('super secret content'));
+console.log('Direct decrypted content:', decrypted);
 
 // Decrypt content from file
-var decrypted = ES.decrypt();
-console.log('Decrypted content:', decrypted);
+var decrypted2 = ES.decrypt();
+console.log('Decrypted content:', decrypted2);
 ```
 
 ## Tests

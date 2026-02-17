@@ -19,9 +19,19 @@ describe('EncryptoS Tests', () => {
         expect(ES.key).toBe(key);
     });
 
+    test('Direct Encrypt', async () => {
+        var success = ES.directEncrypt(content);
+        expect(success).toBeTruthy();
+    });
+
     test('Encrypt', async () => {
         var success = ES.encrypt(content);
         expect(success).toBeTruthy();
+    });
+
+    test('Direct Decrypt', async () => {
+        var success = ES.directDecrypt(ES.directEncrypt(content));
+        expect(success).toEqual(content);
     });
 
     test('Decrypt', async () => {
