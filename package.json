@@ -1,6 +1,6 @@
 {
 	"name": "encryptos",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Encrypt to and decrypt from a file stream. Compatible with Node.js apps.",
 	"main": "encryptos.js",
 	"files": [
